@@ -1,1 +1,25 @@
-/* Write your CSS here */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+}
+
+.header-brand-button,
+.header-menu-button {
+  border: none;
+  outline: none;
+  background: inherit;
+  cursor: pointer;
+}
+
+.header-brand-img,
+.header-hamburger-menu-icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.header-hamburger-menu-icon {
+  color: #616e7c;
+}
