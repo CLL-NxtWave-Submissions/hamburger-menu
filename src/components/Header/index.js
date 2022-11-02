@@ -10,7 +10,11 @@ import 'reactjs-popup/dist/index.css'
 import './index.css'
 
 const CustomGiHamburgerMenu = React.forwardRef(({open, ...props}, ref) => (
-  <button type="button" className="header-hamburger-menu-icon-btn">
+  <button
+    testid="hamburgerIconButton"
+    type="button"
+    className="header-hamburger-menu-icon-btn"
+  >
     <GiHamburgerMenu
       className="header-hamburger-menu-icon"
       ref={ref}
@@ -41,6 +45,7 @@ const Header = () => (
         <div className="popup-container">
           <div className="popup-close-btn-container">
             <button
+              testid="closeButton"
               className="popup-close-btn"
               type="button"
               onClick={() => close()}
@@ -48,21 +53,21 @@ const Header = () => (
               <IoMdClose className="close-btn-icon" />
             </button>
           </div>
-          <div className="popup-menu-container">
+          <ul className="popup-menu-container">
             <Link to="/" className="routing-link">
-              <div className="menu-item-container">
+              <li className="menu-item-container">
                 <AiFillHome className="menu-item-icon" />
                 <p className="menu-item-name">Home</p>
-              </div>
+              </li>
             </Link>
 
             <Link to="/about" className="routing-link">
-              <div className="menu-item-container">
+              <li className="menu-item-container">
                 <BsInfoCircleFill className="menu-item-icon" />
                 <p className="menu-item-name">About</p>
-              </div>
+              </li>
             </Link>
-          </div>
+          </ul>
         </div>
       )}
     </Popup>
