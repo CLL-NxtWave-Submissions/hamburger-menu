@@ -21,8 +21,14 @@
   height: 3.5rem;
 }
 
-.header-hamburger-menu-icon {
+.header-hamburger-menu-icon-btn {
+  border: none;
+  outline: none;
+  background: inherit;
   cursor: pointer;
+}
+
+.header-hamburger-menu-icon {
   width: 2rem;
   height: 2rem;
 }
@@ -73,18 +79,18 @@
   align-items: center;
   margin-bottom: 1rem;
   text-decoration: none;
+  color: #616e7c;
+  outline: none;
 }
 
 .menu-item-icon {
-  color: #616e7c;
   width: 2rem;
   height: 2rem;
   margin-right: 0.75rem;
 }
 
 .menu-item-name {
-  color: #616e7c;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 550;
   font-family: 'Roboto';
 }
