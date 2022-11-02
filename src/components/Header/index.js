@@ -2,6 +2,7 @@ import React from 'react'
 import Popup from 'reactjs-popup'
 import {Link} from 'react-router-dom'
 import {GiHamburgerMenu} from 'react-icons/gi'
+import {IoMdClose} from 'react-icons/io'
 import {AiFillHome} from 'react-icons/ai'
 import {BsInfoCircleFill} from 'react-icons/bs'
 
@@ -33,17 +34,30 @@ const Header = () => {
         // className="popup-content"
         closeOnDocumentClick
       >
-        <>
-          <Link to="/" className="menu-item-container">
-            <AiFillHome className="menu-item-icon" />
-            <p className="menu-item-name">Home</p>
-          </Link>
+        {close => (
+          <div className="popup-container">
+            <div className="popup-close-btn-container">
+              <button
+                className="popup-close-btn"
+                type="button"
+                onClick={() => close()}
+              >
+                <IoMdClose className="close-btn-icon" />
+              </button>
+            </div>
+            <div className="popup-menu-container">
+              <Link to="/" className="menu-item-container">
+                <AiFillHome className="menu-item-icon" />
+                <p className="menu-item-name">Home</p>
+              </Link>
 
-          <Link to="/about" className="menu-item-container">
-            <BsInfoCircleFill className="menu-item-icon" />
-            <p className="menu-item-name">About</p>
-          </Link>
-        </>
+              <Link to="/about" className="menu-item-container">
+                <BsInfoCircleFill className="menu-item-icon" />
+                <p className="menu-item-name">About</p>
+              </Link>
+            </div>
+          </div>
+        )}
       </Popup>
     </div>
   )

@@ -22,17 +22,46 @@
 }
 
 .header-hamburger-menu-icon {
-  /* color: #616e7c; */
+  cursor: pointer;
   width: 2rem;
   height: 2rem;
 }
 
-.popup-content {
+.popup-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.popup-close-btn-container {
+  display: flex;
+  padding: 1rem;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 15%;
+}
+
+.popup-close-btn {
+  border: none;
+  outline: none;
+  background: inherit;
+  cursor: pointer;
+}
+
+.close-btn-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  color: #616e7c;
+}
+
+.popup-menu-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 80%;
   min-height: 100vh;
   width: 100%;
   padding: 2rem;
