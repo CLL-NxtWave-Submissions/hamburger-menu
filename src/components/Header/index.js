@@ -55,15 +55,15 @@ const Header = () => (
           </div>
           <ul className="popup-menu-container">
             <li className="menu-item-container">
+              <AiFillHome className="menu-item-icon" />
               <Link to="/" className="routing-link">
-                <AiFillHome className="menu-item-icon" />
                 <p className="menu-item-name">Home</p>
               </Link>
             </li>
 
             <li className="menu-item-container">
+              <BsInfoCircleFill className="menu-item-icon" />
               <Link to="/about" className="routing-link">
-                <BsInfoCircleFill className="menu-item-icon" />
                 <p className="menu-item-name">About</p>
               </Link>
             </li>
