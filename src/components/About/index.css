@@ -1,1 +1,17 @@
-/* Write your CSS here */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.about-content-container {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-content-img {
+  width: 70%;
+}
