@@ -54,19 +54,19 @@ const Header = () => (
             </button>
           </div>
           <ul className="popup-menu-container">
-            <Link to="/" className="routing-link">
-              <li className="menu-item-container">
+            <li className="menu-item-container">
+              <Link to="/" className="routing-link">
                 <AiFillHome className="menu-item-icon" />
                 <p className="menu-item-name">Home</p>
-              </li>
-            </Link>
+              </Link>
+            </li>
 
-            <Link to="/about" className="routing-link">
-              <li className="menu-item-container">
+            <li className="menu-item-container">
+              <Link to="/about" className="routing-link">
                 <BsInfoCircleFill className="menu-item-icon" />
                 <p className="menu-item-name">About</p>
-              </li>
-            </Link>
+              </Link>
+            </li>
           </ul>
         </div>
       )}
