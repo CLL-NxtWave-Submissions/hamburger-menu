@@ -38,8 +38,7 @@ const Header = () => (
     <Popup
       modal
       trigger={open => <CustomGiHamburgerMenu open={open} />}
-      // className="popup-content"
-      closeOnDocumentClick
+      className="popup-content"
     >
       {close => (
         <div className="popup-container">
