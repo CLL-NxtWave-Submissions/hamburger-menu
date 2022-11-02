@@ -21,13 +21,15 @@ const CustomGiHamburgerMenu = React.forwardRef(({open, ...props}, ref) => (
 
 const Header = () => (
   <div className="header-container">
-    <button type="button" className="header-brand-button">
-      <img
-        className="header-brand-img"
-        src="https://assets.ccbp.in/frontend/react-js/hamburger-menu-website-logo.png"
-        alt="website logo"
-      />
-    </button>
+    <Link to="/" className="routing-link">
+      <button type="button" className="header-brand-button">
+        <img
+          className="header-brand-img"
+          src="https://assets.ccbp.in/frontend/react-js/hamburger-menu-website-logo.png"
+          alt="website logo"
+        />
+      </button>
+    </Link>
 
     <Popup
       modal
@@ -47,14 +49,18 @@ const Header = () => (
             </button>
           </div>
           <div className="popup-menu-container">
-            <Link to="/" className="menu-item-container">
-              <AiFillHome className="menu-item-icon" />
-              <p className="menu-item-name">Home</p>
+            <Link to="/" className="routing-link">
+              <div className="menu-item-container">
+                <AiFillHome className="menu-item-icon" />
+                <p className="menu-item-name">Home</p>
+              </div>
             </Link>
 
-            <Link to="/about" className="menu-item-container">
-              <BsInfoCircleFill className="menu-item-icon" />
-              <p className="menu-item-name">About</p>
+            <Link to="/about" className="routing-link">
+              <div className="menu-item-container">
+                <BsInfoCircleFill className="menu-item-icon" />
+                <p className="menu-item-name">About</p>
+              </div>
             </Link>
           </div>
         </div>
